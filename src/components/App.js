@@ -3,7 +3,7 @@ import "./../styles/App.css";
 
 function App() {
 
- const [var1,set] = useState('false')
+ const [var1,set] = useState(false)
  function fun(){
   set(!var1)
  }

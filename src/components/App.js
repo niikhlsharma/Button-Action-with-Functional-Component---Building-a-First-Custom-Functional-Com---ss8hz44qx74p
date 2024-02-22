@@ -8,7 +8,7 @@ function App() {
 
     <button id='click' onClick={fun}>Render</button>
 
-    <p id='para'>
+    <p>
 
 
     </p>
@@ -20,8 +20,9 @@ function App() {
 const para = "Hello, I've learnt to use the full-stack evaluation tool. This makes me so happy";
   function fun()
 {
-   const abc = document.getElementById('para');
+   const abc = document.getElementsByTagName("p")
    abc.innerHTML = para;
+   abc.id = 'para';
 }
 
 export default App;
